@@ -8,7 +8,7 @@ import numpy as np
 maxint=sys.maxsize
 cities=[]
 order=[]
-totalCities=10
+totalCities=12
 
 population=[]
 
@@ -44,6 +44,7 @@ def plotDistance(order,bestEver):
     npcityY = np.array ( cityY )
 
     if bestEver:
+        ax2.set_xlabel("Start: "+str(cityPoints[order[0]])+" End: "+str(cityPoints[order[-1]]))
         Ln2.set_ydata ( npcityY )
         Ln2.set_xdata ( npcityX )
     else:
@@ -90,6 +91,7 @@ def calcFitness():
     for i in range(0,populationSize):
         d=calcDistance(population[i])
         if(d<recordDistance):
+            ax1.set_xlabel ( "Best " + str ( d ) )
             recordDistance=d
             bestEver=population[i].copy()
             plotDistance ( bestEver,True )
