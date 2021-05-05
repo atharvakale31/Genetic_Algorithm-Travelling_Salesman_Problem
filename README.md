@@ -20,6 +20,7 @@ These algorithms can be implemented to find a solution to the optimization probl
     -   Algorithm chooses the best Start and End city so as to minimize distance travelled.
     -    Visits each city exactly once
     -    Stays at End City
+    
 ![](output/TSP_STE.gif)
 
 ## Reference:
