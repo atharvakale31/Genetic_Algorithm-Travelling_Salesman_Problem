@@ -13,14 +13,15 @@ These algorithms can be implemented to find a solution to the optimization probl
 - TSP_STS (Start to Start) : 
     -   Travelling salesman starts from Start city 
     -    Visits each city exactly once
-    -    Comes back to Start city  
+    -    Comes back to Start city 
+
 ![](output/TSP_STS.gif)
 
 - TSP_STE (Start to End) : 
     -   Algorithm chooses the best Start and End city so as to minimize distance travelled.
     -    Visits each city exactly once
     -    Stays at End City
-    
+
 ![](output/TSP_STE.gif)
 
 ## Reference:
